@@ -12,12 +12,17 @@ body {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #334155 70%, #22c55e 100%);
     min-height: 100vh;
     background-attachment: fixed;
+    /* overflow: hidden; */
 }
 
 .logo {
     height: 50px;
     margin-right: 10px;
     border-radius: 4%;
+}
+
+.hidden{
+    overflow: hidden;
 }
 
 .container {
@@ -1442,6 +1447,17 @@ body {
 
 .content-wrapper {
     max-width: 800px;
+    margin: 0 auto;
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.content-wrapper2{
+    /* max-width: 800px; */
     margin: 0 auto;
     background: rgba(30, 41, 59, 0.8);
     backdrop-filter: blur(10px);
