@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PANORAMA PARK - Mənzil İdarəetmə Sistemi</title>
+    <title>Apartman Yönetimi</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-<body >
+<body class="hidden">
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <img class="logo" src="./apartman_yonetimi_logo.png" alt="logo">
-                <span>Panorama Park</span>
+                <span>Apartman Yönetimi</span>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -44,7 +44,7 @@
     <section class="hero">
         <div class="hero-background">
             <img src="panoram_1200.jpg" alt="Panorama Park" class="hero-image">
-            <div class="hero-overlay"></div>
+            <!-- <div class="hero-overlay"></div> -->
         </div>
         <div class="hero-content">
 
@@ -55,7 +55,7 @@
                     <div class="login-header">
                         <img src="./apartman_yonetimi_logo.png" alt="logo" class="login-logo-img">
                         <div class="login-logo">
-                            <span>Panorama Park</span>
+                            <span>Apartman Yönetimi</span>
                         </div>
                         <h3>Giriş</h3>
                     </div>
@@ -69,19 +69,17 @@
                             <input type="password" placeholder="Şifrənizi daxil edin" required>
                         </div>
                         <div class="form-options">
-                            <label class="checkbox-container">
+                            <!-- <label class="checkbox-container">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 Yadda saxla
-                            </label>
+                            </label> -->
                             <button type="submit" class="login-btn">
                                 <i class="fas fa-sign-in-alt"></i>
                                 Daxil olun
                             </button>
                         </div>
-                        <div class="captcha-container">
-                            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
-                        </div>
+                        
                         <div class="forgot-password">
                             <a href="#">Şifrəni unutmusunuz?</a>
                         </div>
