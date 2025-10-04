@@ -1,128 +1,74 @@
 <!DOCTYPE html>
 <html lang="az">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Əlaqə - Apartman Yönetimi</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
     <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">
-          <img class="logo" src="./apartman_yonetimi_logo.png" alt="logo" />
-          <span>Apartman Yönetimi</span>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img class="logo" src="./apartman_yonetimi_logo.png" alt="logo">
+                <span>Apartman Yönetimi</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Ana səhifə</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Haqqımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="privacy-policy.html" class="nav-link">Məxfilik siyasəti</a>
+                </li>
+                <li class="nav-item">
+                    <a href="uterms.html" class="nav-link">İstifadəçi şərtləri</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Əlaqə</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Ana səhifə</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">Haqqımızda</a>
-          </li>
-          <li class="nav-item">
-            <a href="privacy-policy.html" class="nav-link">Məxfilik siyasəti</a>
-          </li>
-          <li class="nav-item">
-            <a href="uterms.html" class="nav-link">İstifadəçi şərtləri</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link active">Əlaqə</a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </div>
     </nav>
 
-    <section class="page-hero">
-      <div class="hero-background">
-        <img src="hq720.jpg" alt="Panorama Park" class="hero-image" />
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-text">
-          <div class="container">
-            <div class="contact-grid">
-              <div class="contact-info">
-                <h2>Əlaqə</h2>
-
-                <div class="contact-items">
-                  <div class="contact-item">
-                    <!-- <div class="contact-icon">
-                      <i class="fas fa-map-marker-alt"></i>
-                    </div> -->
-                    <div class="contact-details">
-                      <h4>Ünvan</h4>
-                      <p>
-                        Xətai r. Süleyman Vəzirov 17 C
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="contact-item">
-                    <!-- <div class="contact-icon">
-                      <i class="fas fa-phone"></i>
-                    </div> -->
-                    <div class="contact-details">
-                        <h4>Telefon</h4>
-                        <a href="tel:+994124893033">+994124893033</a>
-                    </div>
-
-                  </div>
-
-                  <div class="contact-item">
-                    <!-- <div class="contact-icon">
-                      <i class="fas fa-envelope"></i>
-                    </div> -->
-                    <div class="contact-details">
-                        <h4>E-mail</h4>
-                        <a href="mailto:info@apartmanyonetimi.az">info@apartmanyonetimi.az</a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section class="page-hero-full">
+        <div class="hero-background">
+            <img src="hq720.jpg" alt="Panorama Park" class="hero-image">
+            <div class="hero-overlay"></div>
         </div>
+        <div class="hero-content-center">
+          <div class="content-box">
+              <h1>Əlaqə</h1>
+              <div class="contact-info">
+                <div><strong>Ünvan:</strong> Xətai r. Süleyman Vəzirov 17 C</div>
+                <div><strong>Telefon:</strong> <a href="tel:+994124893033">+(994) 12 489-3033</a></div>
+                <div><strong>E-mail:</strong> <a href="mailto:info@apartmanyonetimi.az">info@apartmanyonetimi.az</a></div>
+              </div>
+          </div>
+      </div>
     </section>
 
     <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navMenu = document.querySelector(".nav-menu");
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
 
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-      });
-
-      document.querySelectorAll(".nav-link").forEach((n) =>
-        n.addEventListener("click", () => {
-          hamburger.classList.remove("active");
-          navMenu.classList.remove("active");
-        })
-      );
-
-      document
-        .querySelector(".contact-form")
-        .addEventListener("submit", (e) => {
-          e.preventDefault();
-          alert(
-            "Mesajınız uğurla göndərildi! Tezliklə sizinlə əlaqə quracağıq."
-          );
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
         });
+
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
     </script>
-  </body>
+</body>
 </html>

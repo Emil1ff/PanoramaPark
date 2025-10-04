@@ -6,10 +6,8 @@
     <title>Apartman Yönetimi</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-<body class="hidden">
+<body>
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -41,45 +39,32 @@
         </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero-login">
         <div class="hero-background">
             <img src="panoram_1200.jpg" alt="Panorama Park" class="hero-image">
-            <!-- <div class="hero-overlay"></div> -->
+            <div class="hero-overlay"></div>
         </div>
-        <div class="hero-content">
-
-            
-            
+        <div class="hero-content-center">
             <div class="login-container">
                 <div class="login-card">
                     <div class="login-header">
                         <img src="./apartman_yonetimi_logo.png" alt="logo" class="login-logo-img">
-                        <div class="login-logo">
-                            <span>Apartman Yönetimi</span>
-                        </div>
-                        <h3>Giriş</h3>
+                        <h2>Apartman Yönetimi</h2>
+                        <p>Giriş</p>
                     </div>
                     <form class="login-form">
                         <div class="input-group">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="İstifadəçi adı və ya e-poçt ünvanı" required>
+                            <input type="text" placeholder="İstifadəçi adı və ya e-poçt" required>
                         </div>
                         <div class="input-group">
                             <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="Şifrənizi daxil edin" required>
+                            <input type="password" placeholder="Şifrə" required>
                         </div>
-                        <div class="form-options">
-                            <!-- <label class="checkbox-container">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                Yadda saxla
-                            </label> -->
-                            <button type="submit" class="login-btn">
-                                <i class="fas fa-sign-in-alt"></i>
-                                Daxil olun
-                            </button>
-                        </div>
-                        
+                        <button type="submit" class="login-btn">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Daxil olun
+                        </button>
                         <div class="forgot-password">
                             <a href="#">Şifrəni unutmusunuz?</a>
                         </div>
@@ -88,8 +73,6 @@
             </div>
         </div>
     </section>
-
-   
 
     <script>
         const hamburger = document.querySelector('.hamburger');
