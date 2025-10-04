@@ -14,6 +14,12 @@ body {
     background-attachment: fixed;
 }
 
+.logo {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 4%;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -143,9 +149,16 @@ body {
     z-index: -1;
 }
 
+.logo-image img{
+    width: 100%;
+    max-width: 500px;
+
+}
+
 .hero-content {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
     max-width: 1200px;
@@ -154,6 +167,7 @@ body {
     position: relative;
     z-index: 1;
     min-height: calc(100vh - 70px);
+    justify-content: space-around;
 }
 
 .hero-text h1 {
@@ -192,7 +206,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
     padding: 2rem 0;
 }
 
