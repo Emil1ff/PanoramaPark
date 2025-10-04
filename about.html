@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haqqımızda - PANORAMA PARK</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>PANORAMA PARK</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Ana səhifə</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">Haqqımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="privacy-policy.html" class="nav-link">Məxfilik siyasəti</a>
+                </li>
+                <li class="nav-item">
+                    <a href="uterms.html" class="nav-link">İstifadəçi şərtləri</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Əlaqə</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="hero-background">
+            <img src="hq720.jpg" alt="ALMAZ PARK Kompleksi" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Haqqımızda</h1>
+                <p>PANORAMA PARK - Müasir mənzil idarəetmə həlləri</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Şirkətimiz haqqında</h2>
+                    <p>PANORAMA PARK, 2015-ci ildən bəri Azərbaycanın aparıcı mənzil idarəetmə şirkətlərindən biridir. Biz müasir texnologiyalar və peşəkar yanaşma ilə mənzil sahiblərinə ən yaxşı xidməti təqdim edirik.</p>
+                    
+                    <p>Komandamız 10 ildən çox təcrübəyə malik mütəxəssislərdən ibarətdir və daimi olaraq öz biliklərini yeniləyir. Bizim məqsədimiz müştərilərimizin rahatlığını və təhlükəsizliyini təmin etməkdir.</p>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Mənzil</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Müştəri</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">İl təcrübə</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Dəstək</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="panoram_1200.jpg" alt="ALMAZ PARK Kompleksi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+</body>
+</html>
